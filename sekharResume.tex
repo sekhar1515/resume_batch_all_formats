@@ -1,0 +1,174 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.35in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Resume starts here
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{{\LARGE Sekhar Reddy}} & \href{mailto:sekharreddy1515@gmail.com}{sekharreddy1515@gmail.com} \\
+  \href{https://leetcode.com/sekharreddy1515/}{LeetCode: SekharReddy1515} & +91-9182107244 \\
+  \href{https://github.com/sekhar1515}{Github: sekhar1515} & 
+  \href{https://www.linkedin.com/in/sekharreddy8/}{LinkedIn: sekharreddy8} \\
+\end{tabular*}
+
+\vspace{-8pt}
+\section{Professional Summary}
+\resumeSubHeadingListStart
+\item \small{
+Backend Developer with 4+ years of experience building scalable, high-performance backend systems. Skilled in Core Java, J2EE, Spring Boot, REST APIs, microservices, multithreading, concurrency, data structures, algorithms. Strong in debugging, system design, and performance optimization. Proven track record of delivering robust backend solutions in fast-paced environments.
+}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading{Oracle (OCI)}{Bengaluru}
+{Full Stack Developer (Backend Focus)}{Dec 2025 – Present}
+\resumeItemListStart
+  \resumeItem{Rate limiter development}{Currently working on implementing rate-limiting mechanisms to protect APIs, prevent abuse, and improve backend system reliability.}
+\resumeItemListEnd
+
+% Techolution
+\resumeSubheading{Techolution (MCB)}{Remote}
+{Full Stack Developer (Backend Focus)}{Feb 2023 – Dec 2025}
+\resumeItemListStart
+
+\resumeItem{Engineered SplitBill Microservice}
+{Developed a scalable SplitBill microservice using Java, Spring Boot, and microservices architecture. Implemented multi-party payment requests, real-time state tracking (pending/paid/expired), and a scheduler-driven workflow that periodically checks payment statuses and triggers reminder or expiry notifications. Improved user engagement and reduced manual follow-ups by 30\%.}
+
+\resumeItem{Optimized SSL Certificate Loading Pipeline}
+{Optimized SSL certificate loading for WebClient by enabling runtime retrieval from Kubernetes Secrets instead of build-time embedding. Reduced deployment time by 80\%, eliminated manual certificate updates, and improved CI/CD pipeline reliability across microservices.}
+
+\resumeItem{Implemented Secure NFC Tokenization}
+{Designed and implemented a secure tokenization system for NFC-based transactions, replacing physical cards with digital tokens. Ensured PCI-DSS, encryption, and OWASP-aligned security, reducing sensitive data exposure risk by 40\% while delivering seamless, low-latency contactless payments.}
+
+\resumeItem{Developed Card Token Lifecycle Management System}
+{Built a secure Card Token Lifecycle Management module supporting token suspension, resumption, and card replacement. Improved processing speed by leveraging multithreading and ensured PCI-DSS-compliant handling of card tokens. Enhanced system stability and reduced token-processing errors by 25\%.}
+
+\resumeItem{Implemented Secure Visa Encryption \& Signing Framework}
+{Developed a secure end-to-end encryption and signing framework for Visa integration, managing keystores/truststores, dynamic cryptographic key mapping, and JWS signature verification. Built functionality to decrypt incoming requests and generate signed and encrypted JSON responses, ensuring data confidentiality, integrity, and authenticity across all Visa communications.}
+
+\resumeItemListEnd
+
+% Bytexl
+\resumeSubheading{Bytexl}{Hyderabad}
+{Full Stack Developer (Backend Focus)}{Nov 2022 – Jan 2023}
+\resumeItemListStart
+
+\resumeItem{Developed Trainers Dashboard Backend}
+{Built backend APIs using Java/Spring Boot with optimized queries and server-side aggregation to deliver trainer metrics efficiently.}
+
+\resumeItem{Implemented Email OTP Verification}
+{Built an OTP verification service using Azure Communication Services with retry and fallback handling for reliable delivery.}
+
+\resumeItem{Built Bulk Upload Processing System}
+{Developed backend support for CSV ingestion with validation, batch processing, and error reporting for high-volume uploads.}
+
+\resumeItemListEnd
+
+% Ford Smart Mobility
+\resumeSubheading{Ford Smart Mobility}{Chennai}
+{Junior Engineer — Backend}{Sep 2021 – Nov 2022}
+\resumeItemListStart
+
+\resumeItem{Backend Services Development}
+{Developed backend services using Java EE, Spring Boot, and REST APIs for third-party integrations, improving backend response reliability by 20\%.}
+
+\resumeItem{Performance Optimization}
+{Enhanced large JSON data processing using multithreading and Java parallel streams, reducing execution time by 30\%.}
+
+\resumeItem{Testing \& Debugging}
+{Wrote unit/integration tests with JUnit, Mockito, TestNG, increasing test coverage by 25\% and supporting production debugging.}
+
+\resumeItem{Spring Boot Upgrade}
+{Upgraded services from Spring Boot 2.5 → 2.6.9, improving maintainability and reducing compatibility issues by 15\%.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\resumeSubHeadingListStart
+\item \small{
+\textbf{Languages:} Core Java, Java 8+, Python \\
+\textbf{Frameworks:} Spring Boot, Spring Framework \\
+\textbf{Backend:} REST APIs, Microservices Architecture, API Development \\
+\textbf{Concepts:} OOP, Data Structures, Algorithms, Design Patterns, Multithreading, Concurrency, HLD/LLD \\
+\textbf{Databases:} Oracle SQL, MySQL, PostgreSQL, MongoDB, PL/SQL \\
+\textbf{DevOps/Tools:} Git, Docker, Kubernetes, CI/CD, Azure DevOps, Jira \\
+\textbf{Testing:} JUnit, Mockito, TestNG, Test Containers; Unit \& Integration Testing \\
+\textbf{Other:} Performance Optimization, Debugging, Production Support, System Reliability
+}
+\resumeSubHeadingListEnd
+
+\vspace{-8pt}
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{Gayatri Vidya Parishad College Of Engineering}{Visakhapatnam, India}
+  {B.Tech in Computer Science; GPA: 8.57}{2017 – 2021}
+\resumeSubHeadingListEnd
+
+\vspace{-8pt}
+\section{Project}
+\resumeSubHeadingListStart
+  \resumeSubItem{Face Mask Detection}{Built a CNN-based ML model to detect mask-wearing with 80\% accuracy. (May 2021)}
+\resumeSubHeadingListEnd
+
+\end{document}

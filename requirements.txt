@@ -1,0 +1,9 @@
+openai
+python-dotenv
+requests
+trafilatura
+beautifulsoup4
+lxml
+python-docx
+pypdf
+reportlab
